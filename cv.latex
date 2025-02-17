@@ -1,0 +1,65 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\definecolor{primary}{RGB}{44, 62, 80}
+\definecolor{secondary}{RGB}{127, 140, 141}
+\definecolor{accent}{RGB}{41, 128, 185}
+
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+
+\begin{document}
+\pagestyle{empty}
+
+\noindent
+\begin{minipage}[t]{0.32\textwidth}
+    \color{primary}{\Large Vaggelis Ksl}\\
+    \color{secondary}{DevOps Cloud Engineer}
+    \\[10pt]
+    \color{primary}\faEnvelope ~ \href{mailto:vaggelis@example.com}{vaggelis@example.com}\\
+    \faGithub ~ \href{https://github.com/vagggelisksl}{github.com/vagggelisksl}\\
+    \faLinkedin ~ \href{https://www.linkedin.com/in/vaggelis-kls-5817bb47/}{linkedin.com/in/vaggelis}\\
+    \\[10pt]
+    \section*{Skills}
+    \begin{itemize}[left=0pt, label=\faCheck]
+        \item Kubernetes, Docker
+        \item CI/CD (Jenkins, GitHub Actions)
+        \item AWS, GCP
+        \item Linux, Bash, Terraform
+        \item Monitoring (Prometheus, Grafana)
+    \end{itemize}
+    \\[10pt]
+    \section*{Description}
+    Experienced DevOps Cloud Engineer passionate about automation, cloud infrastructure, and scalable deployments.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.64\textwidth}
+    \section*{Experience}
+    \textbf{TurinTech} \hfill 202X -- Present\\
+    DevOps Cloud Engineer\\
+    - Managed Kubernetes clusters and CI/CD pipelines.\\
+    - Automated cloud deployments using Terraform and Ansible.
+    \\[10pt]
+    \textbf{Previous Company} \hfill 202X -- 202X\\
+    DevOps Engineer\\
+    - Developed and maintained cloud-based infrastructure.
+    \\[10pt]
+    \section*{Projects}
+    \textbf{WebDAV Server for Buttercup}\\
+    - Developed a WebDAV server with LDAP and OAuth support.
+    \\[10pt]
+    \textbf{evoML Deployment on Kubernetes}\\
+    - Managed deployments, monitoring, and automation.
+    \\[10pt]
+    \section*{Education}
+    \textbf{B.Sc. Computer Science}\\
+    University Name, Graduation Year
+\end{minipage}
+
+\end{document}
