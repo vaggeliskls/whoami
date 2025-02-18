@@ -1,0 +1,21 @@
+name: pdf generation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate_pdf:
+    runs-on: ubuntu-latest
+    name: generate pdf
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX Document to pdf
+        uses: docker://ghcr.io/vaggeliskls/text-to-pdf:latest
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv pdf
+          path: "./cv.pdf"
