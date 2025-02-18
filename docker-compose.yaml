@@ -2,9 +2,8 @@ version: "3.8"
 
 services:
   latex-to-pdf:
-    image: ghcr.io/vaggeliskls/text-to-pdf:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/vaggeliskls/tex-to-pdf:latest
+    environment:
+      TEX_FILE: cv.tex
     volumes:
       - .:/app

@@ -12,7 +12,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Compile LaTeX Document to pdf
-        uses: docker://ghcr.io/vaggeliskls/text-to-pdf:latest
+        uses: docker://ghcr.io/vaggeliskls/tex-to-pdf:latest
+        env:
+          TEX_FILE: cv.tex
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
