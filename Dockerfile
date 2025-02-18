@@ -14,6 +14,6 @@ RUN apt-get update && apt-get install -y \
 # Set working directory
 WORKDIR /app
 
-COPY latex_cv.tex .
+COPY cv.tex .
 
 CMD ["sh", "-c", "while inotifywait -e modify cv.tex; do pdflatex cv.tex; done"]
