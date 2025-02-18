@@ -1,16 +1,19 @@
-FROM alpine:latest
+# syntax=docker/dockerfile:1
+FROM debian:bookworm-slim
 
-# Install necessary LaTeX packages
-RUN apk add --no-cache \
-    texlive \
-    texlive-latexextra \
-    texmf-dist-latexextra \
+# Install TeX Live and required utilities
+RUN apt-get update && apt-get install -y \
+    texlive-latex-extra \
+    texlive-fonts-recommended \
+    texlive-fonts-extra \  
     ghostscript \
     poppler-utils \
-    inotify-tools
+    inotify-tools \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
-WORKDIR /cv
+WORKDIR /app
 
-# Command to auto-compile PDF when .tex file changes
-CMD inotifywait -m -e modify latex_cv.tex | while read; do pdflatex latex_cv.tex; done
+COPY latex_cv.tex .
+
+CMD ["sh", "-c", "while inotifywait -e modify cv.tex; do pdflatex cv.tex; done"]

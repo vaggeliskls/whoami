@@ -1,0 +1,78 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{xcolor, titlesec, enumitem, fontawesome5, hyperref, parskip}
+\usepackage{graphicx}
+
+% Define Colors
+\definecolor{primary}{RGB}{41, 128, 185}
+\definecolor{secondary}{RGB}{44, 62, 80}
+
+% Title Formatting
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries\color{secondary}}{}{0em}{}
+
+\begin{document}
+\pagestyle{empty}
+
+% Header Section
+\begin{center}
+    {\huge \textbf{Vaggelis Kalligiannakis} \faIcon{laptop-code}} \\
+    {\large Full-Stack Developer \& DevOps Cloud Engineer} \\
+    \vspace{10pt}
+    \faIcon{map-marker-alt} Heraklion Crete, Greece \quad
+    \faIcon{envelope} \href{mailto:vaggelis@example.com}{vaggelis@example.com} \quad
+    \faIcon{github} \href{https://github.com/vagggelisksl}{github.com/vagggelisksl} \quad
+    \faIcon{linkedin} \href{https://linkedin.com/in/vaggelis}{linkedin.com/in/vaggelis}
+\end{center}
+
+\vspace{15pt}
+
+% About Me
+\section*{\faIcon{user} About Me}
+Passionate DevOps Cloud Engineer with extensive experience in cloud infrastructure, Kubernetes, and automation. Adept at building scalable, secure, and efficient deployment solutions.
+
+\vspace{10pt}
+
+% Skills
+\section*{\faIcon{tools} Skills}
+\begin{itemize}[left=0pt, label=\faIcon{check-circle}]
+    \item Kubernetes, Docker, CI/CD
+    \item AWS, GCP, OpenShift
+    \item Node.js, FastAPI, TypeScript
+    \item Linux, Bash, Terraform
+    \item Monitoring: Prometheus, Grafana
+    \item Security: OAuth, LDAP, SSL/TLS
+\end{itemize}
+
+\vspace{10pt}
+
+% Experience
+\section*{\faIcon{briefcase} Experience}
+\subsection*{TurinTech \textbar\ DevOps Engineer \textbar\ 2020 - Present}
+\begin{itemize}[left=0pt, label=\faIcon{code}]
+    \item Managing Kubernetes clusters and cloud infrastructure
+    \item Automating deployments with CI/CD pipelines
+    \item Implementing security best practices
+\end{itemize}
+
+\subsection*{Freelance \textbar\ Full-Stack Developer \textbar\ 2016 - 2020}
+\begin{itemize}[left=0pt, label=\faIcon{laptop}]
+    \item Developed web applications using Node.js, React, and FastAPI
+    \item Designed scalable cloud architectures
+    \item Optimized performance and security of cloud services
+\end{itemize}
+
+\vspace{10pt}
+
+% Education
+\section*{\faIcon{graduation-cap} Education}
+BSc in Computer Science - Some University (2012 - 2016)
+
+\vspace{10pt}
+
+% Projects
+\section*{\faIcon{project-diagram} Projects}
+\textbf{\faIcon{server} WebDAV Server} - Custom WebDAV server with LDAP/OAuth authentication.\\
+\textbf{\faIcon{cogs} evoML Deployment} - Automating deployment for evoML application on Kubernetes.
+
+\end{document}
