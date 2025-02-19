@@ -6,5 +6,6 @@ services:
     environment:
       TEX_FILE: cv.tex
       WATCH: "true"
+      INTERVAL: 2
     volumes:
       - .:/app
