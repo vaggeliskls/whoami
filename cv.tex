@@ -10,11 +10,15 @@
 % Title Formatting
 \titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
 \titleformat{\subsection}{\bfseries\color{secondary}}{}{0em}{}
+% Long table definition
+\usepackage{longtable}
+\renewcommand{\arraystretch}{1.3} % Adjust row spacing
+
 
 \begin{document}
 \pagestyle{empty}
 
-% Header Section
+% ----------------------- Header section -----------------------
 \begin{center}
     {\huge \textbf{Vaggelis Kalligiannakis} \faIcon{laptop-code}} \\
     \vspace{7pt}
@@ -30,14 +34,14 @@
 
 \vspace{4pt}
 
-% About Me
+% ----------------------- About me -----------------------
 \section*{\faIcon{user} About Me}
 Experienced \textbf{Cloud DevOps Engineer} and \textbf{Full-Stack Software Developer} with expertise in \textbf{cloud infrastructure, automation, and scalable architectures}.  
 Passionate about \textbf{open-source development, research, and technical writing}.
 
 \vspace{2pt}
 
-% Skills
+% ----------------------- Skills -----------------------
 \section*{\faIcon{tools} Technical Skills}
 \begin{itemize}[left=0pt, label=\faIcon{server}]
     \item \textbf{Cloud \& DevOps:} Kubernetes, Docker, OpenShift, AWS, GCP, Terraform, Helm, ArgoCD
@@ -57,7 +61,34 @@ Passionate about \textbf{open-source development, research, and technical writin
 
 \vspace{2pt}
 
-% Experience
+% ----------------------- Work Experience -----------------------
+% \section*{\faIcon{briefcase} Work Experience}
+
+% \begin{longtable}{r|p{12.5cm}}
+
+% % TurinTech AI
+% \textsc{Jul 2021 – Present} & \textbf{Lead Cloud DevOps Engineer \& Full-Stack Software Engineer} \\
+% \footnotesize{\textit{London, UK (Remote)}} & \textsc{TurinTech AI} \\
+% & Architected and deployed \textbf{Kubernetes-based infrastructure}, improving scalability. \\
+% & Led the development of \textbf{CI/CD pipelines} (GitHub Actions, ArgoCD), reducing deployment time by \textbf{50\%}. \\
+% & Designed and enforced \textbf{cloud security best practices} across multiple projects. \\
+% & Integrated \textbf{MLOps workflows} to streamline machine learning deployment. \\
+
+% % FORTH - Software Engineer
+% \textsc{Sep 2017 – Aug 2021} & \textbf{Software Engineer} \\
+% \footnotesize{\textit{Heraklion, Greece}} & \textsc{Foundation for Research and Technology - Hellas (FORTH)} \\
+% & Researched and developed \textbf{Ambient Intelligence} solutions for smart environments. \\
+% & Created \textbf{cloud-based data pipelines} for real-time sensor data processing. \\
+% & Published research on \textbf{AI, IoT, and distributed computing}. \\
+
+% % FORTH - Research & Development Engineer
+% \textsc{Nov 2014 – Jan 2016} & \textbf{Research \& Development Engineer} \\
+% \footnotesize{\textit{Heraklion, Greece}} & \textsc{Foundation for Research and Technology - Hellas (FORTH)} \\
+% & Developed \textbf{distributed systems} for \textbf{big data analytics} and \textbf{semantic web applications}. \\
+
+% \end{longtable}
+
+
 \section*{\faIcon{briefcase} Professional Experience}
 
 \subsection*{TurinTech AI \textbar\ Lead Cloud DevOps Engineer \textbar\ Jul 2021 - Present (3 yrs 8 mo)}
@@ -88,7 +119,7 @@ Passionate about \textbf{open-source development, research, and technical writin
 
 \vspace{2pt}
 
-% Education
+% ----------------------- Education -----------------------
 \section*{\faIcon{graduation-cap} Education}
 
 \subsection*{University of Crete \textbar\ Master's Degree in Computer Science \textbar\ 2014 - 2016}
@@ -104,7 +135,7 @@ Passionate about \textbf{open-source development, research, and technical writin
 
 \vspace{2pt}
 
-% Publications
+% ----------------------- Publications -----------------------
 \section*{\faIcon{book} Publications}
 \subsection*{Integrating Ambient Intelligence Technologies for Empowering Agriculture}
 \textit{EFITA Conference, 2021}  
