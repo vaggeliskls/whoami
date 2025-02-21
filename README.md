@@ -31,3 +31,7 @@ docker compose down
 Once built, open the generated cv.pdf file with any PDF viewer to track changes.
 
 > If you face issues (write permissions) with pdf viewers you can try any visual code pdf viewer plugin or any browser
+
+## 📚 References
+
+- [Devops docker projects](https://github.com/vaggeliskls/devops-docker-projects)
