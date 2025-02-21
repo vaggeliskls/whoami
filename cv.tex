@@ -1,6 +1,6 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
-\usepackage{xcolor, titlesec, enumitem, fontawesome5, hyperref, parskip}
+\usepackage{xcolor, titlesec, enumitem, fontawesome5, hyperref, parskip, longtable, changepage}
 \usepackage{graphicx}
 
 % Define Colors
@@ -10,15 +10,13 @@
 % Title Formatting
 \titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
 \titleformat{\subsection}{\bfseries\color{secondary}}{}{0em}{}
-% More packages
-\usepackage{longtable}
-\renewcommand{\arraystretch}{1.3} % Adjust row spacing
-\usepackage{changepage} % Add this to the preamble for indentation
+\renewcommand{\arraystretch}{1} % Adjust row spacing
 
 \begin{document}
 \pagestyle{empty}
 
 % ----------------------- Header section -----------------------
+
 \begin{center}
     {\huge \textbf{Vaggelis Kalligiannakis} } \\
     \vspace{7pt}
@@ -35,6 +33,7 @@
 \vspace{4pt}
 
 % ----------------------- About me -----------------------
+
 \section*{\faIcon{user} About Me}
 Experienced \textbf{Cloud DevOps Engineer} and \textbf{Full-Stack Software Developer} with expertise in \textbf{cloud infrastructure, automation, and scalable architectures}.  
 Passionate about \textbf{open-source development, research, and technical writing}.
@@ -42,6 +41,7 @@ Passionate about \textbf{open-source development, research, and technical writin
 \vspace{2pt}
 
 % ----------------------- Skills -----------------------
+
 \section*{\faIcon{tools} Technical Skills}
 \begin{itemize}[left=0pt, label=\faIcon{server}]
     \item \textbf{Cloud \& DevOps:} Kubernetes, Docker/Podman, OpenShift, AWS, GCP, AZURE, K3d, On-premise envs
@@ -82,8 +82,9 @@ As a \textbf{Lead Cloud DevOps Engineer}, I oversee the entire release process, 
 \subsection*{\faBriefcase\ \textbf{RnD Engineer} \textbar\ \faBuilding\ HCI - FORTH  \hfill \faCalendar\ Sep 2017 – Aug 2021 (4 yrs)}
 \vspace{1pt}
 \begin{adjustwidth}{1em}{1em}
-As an \textbf{RnD Engineer}, I contributed to both research and production projects, working on private, public, and large-scale European sector initiatives. I developed applications using \textbf{Angular, Node.js, and Laravel}, specializing in \textbf{intelligent environments}, sensor networks, and pervasive computing. My expertise spans \textbf{cloud-based data pipelines} for real-time sensor processing, as well as designing and implementing cutting-edge solutions in \textbf{Ambient Intelligence}. Additionally, I played a key role in delivering production-grade systems for major companies while publishing research on \textbf{AI, IoT, and distributed computing}.
+As an \textbf{RnD Engineer}, I contributed to both research and production projects across \textbf{private, public, and large-scale European initiatives}. I developed applications using \textbf{Angular, Node.js, and Laravel}, specializing in \textbf{intelligent environments}, sensor networks, and pervasive computing. I played a key role in the \textbf{digital transformation} of processes for the \textbf{Ministry of Infrastructure \& Transport}, working on large-scale \textbf{e-government} projects that enabled \textbf{government-to-citizen (G2C)} and \textbf{citizen-to-government (C2G)} services.
 \end{adjustwidth}
+
 
 \vspace{1pt}
 
@@ -105,6 +106,7 @@ During my internship as an \textbf{RnD Engineer}, I developed \textbf{distribute
 \vspace{1pt}
 
 % ----------------------- Education -----------------------
+
 \section*{\faIcon{graduation-cap} Education}
 
 \subsection*{\faIcon{graduation-cap} University of Crete \textbar\ Master's Degree in Computer Science \textbar\ 2014 - 2016}
@@ -131,6 +133,7 @@ During my internship as an \textbf{RnD Engineer}, I developed \textbf{distribute
 \vspace{2pt}
 
 % ----------------------- Publications -----------------------
+
 \section*{\faIcon{book} Publications}
 \subsection*{\faIcon{book} Integrating Ambient Intelligence Technologies for Empowering Agriculture \textbar\ EFITA Conference, 2021}
 % \textit{EFITA Conference, 2021}  
